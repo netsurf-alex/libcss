@@ -2101,9 +2101,9 @@ css_error match_selectors_in_sheet(css_select_ctx *ctx,
 	const css_selector **node_selectors = &empty_selector;
 	css_selector_hash_iterator node_iterator;
 	const css_selector **id_selectors = &empty_selector;
-	css_selector_hash_iterator id_iterator;
+	css_selector_hash_iterator id_iterator = (css_selector_hash_iterator)NULL;
 	const css_selector ***class_selectors = NULL;
-	css_selector_hash_iterator class_iterator;
+	css_selector_hash_iterator class_iterator = (css_selector_hash_iterator)NULL;
 	const css_selector **univ_selectors = &empty_selector;
 	css_selector_hash_iterator univ_iterator;
 	css_select_rule_source src = { CSS_SELECT_RULE_SRC_ELEMENT, 0 };

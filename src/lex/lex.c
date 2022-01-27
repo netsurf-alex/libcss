@@ -1545,7 +1545,7 @@ css_error URI(css_lexer *lexer, css_token **token)
 css_error UnicodeRange(css_lexer *lexer, css_token **token)
 {
 	css_token *t = &lexer->token;
-	const uint8_t *cptr;
+	const uint8_t *cptr = NULL;
 	uint8_t c = 0; /* GCC: shush */
 	size_t clen;
 	parserutils_error perror;
